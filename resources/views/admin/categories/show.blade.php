@@ -9,7 +9,6 @@
 
     <div class="row g-3">
         @foreach ($posts as $post)
-            {{-- <li><span>{{ $post->id }} </span><a href="{{ route('admin.posts.show', ['post' => $post]) }}">{{ $post->title }}</a></li> --}}
             <div class="col-sm-6 col-md-4">
                 <div class="card h-100">
                     <img src="{{ asset($post->uploaded_img ? 'storage/' . $post->uploaded_img : 'storage/placeholder.jpeg') }}" class="card-img-top" alt="{{ $post->title }}">
